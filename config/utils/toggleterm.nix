@@ -11,7 +11,7 @@
           end
         end
       '';
-      open_mapping = "<leader>td";
+      open_mapping = " td";
       hide_numbers = true;
       shade_terminals = true;
       start_in_insert = true;
