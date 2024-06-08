@@ -83,7 +83,7 @@
           };
         };
 
-        charp-ls.enable = tue;
+        charp-ls.enable = true;
         
         zls = {
           enable = true;
