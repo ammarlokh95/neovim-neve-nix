@@ -14,13 +14,13 @@
   extraConfigLua = ''
       require("staline").setup({
       sections = {
-        left = { "-mode", " ", "branch" },
-        mid = { "lsp_name" },
-        right = { "file_name", "line_column" },
+        left = { "-mode", " ", "branch", " ", "lsp_name" },
+        mid = { },
+        right = { "file_type", "file_name", "line_column" },
       },
       inactive_sections = {
-        left = { "-mode", " ", "branch" },
-        mid = { "lsp_name" },
+        left = { "-mode", " ", "branch", " ", "lsp_name" },
+        mid = { },
         right = { "file_name", "line_column" },
       },
       defaults = {
