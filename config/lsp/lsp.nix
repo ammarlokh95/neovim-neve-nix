@@ -83,7 +83,7 @@
           };
         };
 
-        charp-ls.enable = true;
+        csharp-ls.enable = true;
         
         zls = {
           enable = true;
