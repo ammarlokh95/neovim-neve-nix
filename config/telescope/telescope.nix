@@ -2,7 +2,11 @@
   plugins.telescope = {
     enable = true;
 
-    extensions = {
+    extensions = 
+    {
+      file-browser = {
+        enable = true;
+      };
       fzf-native = {
         enable = true;
       };
@@ -34,7 +38,7 @@
     };
     keymaps = {
       "<leader><space>" = {
-        action = "find_files, {}";
+        action = "find_files";
         options.desc = "Find project files";
       };
       "<leader>/" = {
@@ -140,7 +144,7 @@
     {
       mode = "n";
       key = "<leader>sd";
-      action = "<cmd>Telescope diagnostics bufnr=0<cr>";
+      action = "<cmd>Telescpe diagnostics bufnr=0<cr>";
       options = {
         desc = "Document diagnostics";
       };

@@ -27,7 +27,7 @@
           "     ░░   ░    ░    ░ ░  ░ ▒ ▒ ░░   ░ ░     "
           "      ░        ░  ░   ░    ░ ░              "
           "                                            "
-          "              git@github.com:redyf          "
+          "                                            "
         ];
       }
       (padding 2)

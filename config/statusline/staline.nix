@@ -16,7 +16,7 @@
       sections = {
         left = { "-mode", " ", "branch", " ", "lsp_name" },
         mid = { },
-        right = { "file_type", "file_name", "line_column" },
+        right = { "file_name", "line_column" },
       },
       inactive_sections = {
         left = { "-mode", " ", "branch", " ", "lsp_name" },
