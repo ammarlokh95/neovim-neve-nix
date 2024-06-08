@@ -11,7 +11,7 @@
           end
         end
       '';
-      open_mapping = " td";
+      open_mapping = "[[<A-i>]]";
       hide_numbers = true;
       shade_terminals = true;
       start_in_insert = true;
@@ -40,9 +40,9 @@
   };
 
   extraConfigLua = ''
-     function _G.set_terminal_keymaps()
-     	local opts = { buffer = 0 }
-    	  vim.keymap.set("t", "jk", [[<C-\><C-n>]], opts)
-     end
-   '';
+    function _G.set_terminal_keymaps()
+    	local opts = { buffer = 0 }
+    	vim.keymap.set("t", "jk", [[<C-\><C-n>]], opts)
+    end
+  '';
 }

@@ -541,6 +541,16 @@
         desc = "Switch between projects";
       };
     }
+
+    # Toggle terminal
+    {
+      key = "<leader>td";
+      mode = "n";
+      action = "<cmd>ToggleTerm<cr>";
+      options = {
+        desc = "Toggle terminal";
+      };
+    }
   ];
   extraConfigLua = ''
     local notify = require("notify")
