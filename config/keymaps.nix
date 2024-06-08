@@ -191,7 +191,7 @@
 
     {
       mode = "n";
-      key = "<leader>w-";
+      key = "<leader>wh";
       action = "<C-W>s";
       options = {
         silent = true;
@@ -201,13 +201,64 @@
 
     {
       mode = "n";
-      key = "<leader>w|";
+      key = "<leader>wv";
       action = "<C-W>v";
       options = {
         silent = true;
         desc = "Split window right";
       };
     }
+    
+    {
+      mode = "n";
+      key = "<leader>wl";
+      action = "<C-W>l";
+      options = {
+        silent = true;
+        desc = "Window left";
+      };
+    }
+    
+    {
+      mode = "n";
+      key = "<leader>wh";
+      action = "<C-W>h";
+      options = {
+        silent = true;
+        desc = "Window left";
+      };
+    }
+    
+    {
+      mode = "n";
+      key = "<leader>wj";
+      action = "<C-W>j";
+      options = {
+        silent = true;
+        desc = "Window down";
+      };
+    }
+    
+    {
+      mode = "n";
+      key = "<leader>wk";
+      action = "<C-W>k";
+      options = {
+        silent = true;
+        desc = "Window up";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>bd";
+      action = "<cmd>bufdelete<cr>";
+      options = {
+        silent = true;
+        desc = "Window up";
+      };
+    }
+
 
     # {
     #   mode = "n";
@@ -461,10 +512,10 @@
       };
     }
 
-    # <C-c> instead of pressing esc just because
+    # jk instead of pressing esc just because
     {
-      mode = "i";
-      key = "<C-c>";
+      mode = ["i" "v"];
+      key = "jk";
       action = "<Esc>";
     }
 

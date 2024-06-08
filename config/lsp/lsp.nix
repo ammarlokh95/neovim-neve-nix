@@ -55,6 +55,9 @@
             };
           };
         };
+        html.enable = true;
+        cssls.enable = true;
+        
         eslint = {enable = true;};
         pyright = {enable = true;};
         ruff-lsp = {enable = true;};
@@ -78,6 +81,16 @@
               enable = true;
             };
           };
+        };
+
+        charp-ls.enable = tue;
+        
+        zls = {
+          enable;
+        };
+
+        gopls = {
+          enable;
         };
       };
       # keymaps = {

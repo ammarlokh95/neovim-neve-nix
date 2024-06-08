@@ -95,14 +95,14 @@
       ];
 
       # Enable chars list
-      list = true; # Show invisible characters (tabs, eol, ...)
+      list = false; # Show invisible characters (tabs, eol, ...)
       listchars = "eol:↲,tab:|->,lead:·,space: ,trail:•,extends:→,precedes:←,nbsp:␣";
 
       # More space in the neovim command line for displaying messages
       cmdheight = 2;
 
       # We don't need to see things like INSERT anymore
-      showmode = false;
+      showmode = true;
 
       # Maximum number of items to show in the popup menu (0 means "use available screen space")
       pumheight = 0;
@@ -132,9 +132,9 @@
         g.neovide_transparency = 0.8
 
         -- Neovide Fonts
-        o.guifont = "MonoLisa Trial:Medium:h15"
+        -- o.guifont = "MonoLisa Trial:Medium:h15"
         -- o.guifont = "CommitMono:Medium:h15"
-        -- o.guifont = "JetBrainsMono Nerd Font:h14:Medium:i"
+        o.guifont = "JetBrainsMono Nerd Font:h14:Medium:i"
         -- o.guifont = "FiraMono Nerd Font:Medium:h14"
         -- o.guifont = "CaskaydiaCove Nerd Font:h14:b:i"
         -- o.guifont = "BlexMono Nerd Font Mono:h14:Medium:i"
