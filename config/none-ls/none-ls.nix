@@ -42,9 +42,7 @@
             }
           '';
         };
-        google_java_format = {
-          enable = true;
-        };
+        
         stylua = {
           enable = true;
         };
