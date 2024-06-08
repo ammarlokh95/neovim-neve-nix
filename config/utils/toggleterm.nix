@@ -15,7 +15,7 @@
       hide_numbers = true;
       shade_terminals = true;
       start_in_insert = true;
-      terminal_mappings = false;
+      terminal_mappings = true;
       persist_mode = true;
       insert_mappings = false;
       close_on_exit = true;
