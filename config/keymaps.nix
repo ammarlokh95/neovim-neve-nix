@@ -519,6 +519,20 @@
       action = "<Esc>";
     }
 
+    # Add line above and below without entering insert
+
+    {
+      mode = "n" ;
+      key = "oo";
+      action = "o<Esc>";
+    }
+
+    {
+      mode = "n" ;
+      key = "OO";
+      action = "O<Esc>";
+    }
+    
     {
       mode = "n";
       key = "<C-f>";
