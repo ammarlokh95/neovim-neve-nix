@@ -553,7 +553,8 @@
     }
     {
       mode = "t";
-      key = "<C-\\><C-n>";
+      key = "jk";
+      action = "<C-\\><C-n>";
       options = {
         desc = "jk to exit terminal mode";
       };
