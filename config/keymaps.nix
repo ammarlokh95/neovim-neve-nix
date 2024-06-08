@@ -514,7 +514,7 @@
 
     # jk instead of pressing esc just because
     {
-      mode = ["i" "v"];
+      mode = ["i" "v" "n" "c"];
       key = "jk";
       action = "<Esc>";
     }
@@ -549,6 +549,13 @@
       action = "<cmd>ToggleTerm<cr>";
       options = {
         desc = "Toggle terminal";
+      };
+    }
+    {
+      mode = "t";
+      key = "<C-\\><C-n>";
+      options = {
+        desc = "jk to exit terminal mode";
       };
     }
   ];
@@ -597,5 +604,13 @@
            vim.lsp.inlay_hint(0, nil)
          end, { desc = 'Toggle Inlay Hints' })
        end
+
+       vim.api.nvim_create_autocmd("TextYankPost", {
+           desc = "Highlight when yanking (copying) text",
+           group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+           callback = function()
+           vim.highlight.on_yank()
+           end,
+        })
   '';
 }
