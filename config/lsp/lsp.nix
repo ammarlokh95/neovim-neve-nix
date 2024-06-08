@@ -86,11 +86,11 @@
         charp-ls.enable = tue;
         
         zls = {
-          enable;
+          enable = true;
         };
 
         gopls = {
-          enable;
+          enable = true;
         };
       };
       # keymaps = {
