@@ -17,6 +17,7 @@
       expandtab = true;
 
       # Enable auto indenting and set it to spaces
+      autoindent = true;
       smartindent = true;
       shiftwidth = 2;
 
