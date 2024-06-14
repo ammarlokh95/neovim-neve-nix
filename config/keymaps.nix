@@ -475,14 +475,33 @@
 
     # Paste stuff without saving the deleted word into the buffer
     {
-      mode = "x";
+      mode = "v";
       key = "<leader>p";
       action = "\"_dP";
       options = {
         desc = "Deletes to void register and paste over";
       };
     }
+    
+    # Paste stuff from global clipboard 
+    {
+      mode = "v";
+      key = "<leader>p";
+      action = "\"+p";
+      options = {
+        desc = "Paste ahead from global clipboard";
+      };
+    }
 
+    # Paste stuff from global clipboard 
+    {
+      mode = "v";
+      key = "<leader>P";
+      action = "\"+P";
+      options = {
+        desc = "Paste back from global clipboard";
+      };
+    }
     # Copy stuff to system clipboard with <leader> + y or just y to have it just in vim
     {
       mode = ["n" "v"];
