@@ -211,7 +211,7 @@
     
     {
       mode = "n";
-      key = "<leader>wl";
+      key = "<C-l>";
       action = "<C-W>l";
       options = {
         silent = true;
@@ -221,7 +221,7 @@
     
     {
       mode = "n";
-      key = "<leader>wh";
+      key = "<C-h>";
       action = "<C-W>h";
       options = {
         silent = true;
@@ -231,7 +231,7 @@
     
     {
       mode = "n";
-      key = "<leader>wj";
+      key = "<C-j>";
       action = "<C-W>j";
       options = {
         silent = true;
@@ -241,7 +241,7 @@
     
     {
       mode = "n";
-      key = "<leader>wk";
+      key = "<C-k>";
       action = "<C-W>k";
       options = {
         silent = true;
@@ -252,7 +252,7 @@
     {
       mode = "n";
       key = "<leader>bd";
-      action = "<cmd>bufdelete<cr>";
+      action = "<cmd>Bufdelete<cr>";
       options = {
         silent = true;
         desc = "Window up";
