@@ -2,6 +2,7 @@
   plugins.oil = {
     enable = true;
     settings = {
+      defaultFileExplorer = false;
       useDefaultKeymaps = true;
       deleteToTrash = true;
       viewOptions = {
@@ -20,6 +21,7 @@
           winblend = 0;
         };
       };
+      
       keymaps = {
         "g?" = "actions.show_help";
         "<CR>" = "actions.select";
