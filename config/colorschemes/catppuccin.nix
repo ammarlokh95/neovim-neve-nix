@@ -1,5 +1,4 @@
-{helpers, lib, ...}:
-with lib;
+{helpers, ...}:
 {
   colorschemes = {
     catppuccin = {
@@ -45,7 +44,7 @@ with lib;
             };
           };
         };
-        custom_highlights = helpers.mkNullOrStrLuaFnOr (with types; attrsOf anything) ''
+        custom_highlights = helpers.mkNullOrStrLuaFnOr  ''
             function(colors)
               local u = require("catppuccin.utils.colors")
               return {
