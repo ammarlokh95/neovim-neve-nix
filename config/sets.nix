@@ -45,7 +45,7 @@
       grepformat = "%f:%l:%c:%m";
 
       # Decrease updatetime
-      updatetime = 50; # faster completion (4000ms default)
+      updatetime = 2000; # faster completion (4000ms default)
 
       # Set completeopt to have a better completion experience
       completeopt = ["menuone" "noselect" "noinsert"]; # mostly just for cmp
@@ -76,7 +76,7 @@
       scrolloff = 8;
 
       # Reduce which-key timeout to 10ms
-      timeoutlen = 10;
+      timeoutlen = 500;
 
       # Set encoding type
       encoding = "utf-8";

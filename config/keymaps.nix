@@ -485,7 +485,7 @@
     
     # Paste stuff from global clipboard 
     {
-      mode = "v";
+      mode = "n";
       key = "<leader>p";
       action = "\"+p";
       options = {
@@ -495,7 +495,7 @@
 
     # Paste stuff from global clipboard 
     {
-      mode = "v";
+      mode = "n";
       key = "<leader>P";
       action = "\"+P";
       options = {

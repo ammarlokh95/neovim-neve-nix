@@ -1,6 +1,6 @@
 {
   plugins.better-escape = {
-    enable = true;
+    enable = false;
     clearEmptyLines = true;
     timeout = 200;
   };
