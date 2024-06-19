@@ -249,17 +249,6 @@
       };
     }
 
-    {
-      mode = "n";
-      key = "<leader>bd";
-      action = "<cmd>Bufdelete<cr>";
-      options = {
-        silent = true;
-        desc = "Window up";
-      };
-    }
-
-
     # {
     #   mode = "n";
     #   key = "<leader>-";

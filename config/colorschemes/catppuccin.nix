@@ -1,3 +1,5 @@
+{helpers, lib, ...}:
+with lib;
 {
   colorschemes = {
     catppuccin = {
@@ -21,6 +23,7 @@
           harpoon = true;
           gitsigns = true;
           which_key = true;
+          bufferline = true;
           illuminate = {
             enabled = true;
           };
@@ -42,6 +45,20 @@
             };
           };
         };
+        custom_highlights = helpers.mkNullOrStrLuaFnOr (with types; attrsOf anything) ''
+            function(colors)
+              local u = require("catppuccin.utils.colors")
+              return {
+                LineNr = {
+                  fg = colors.lavender,
+                },
+                CursorLineNr = {
+                  fg = colors.red,
+                  bg = u.lighten(colors.blue, 0.8),
+                },
+              }
+            end
+      '';
       };
     };
   };
