@@ -44,7 +44,7 @@
             };
           };
         };
-        custom_highlights = helpers.mkNullOrStrLuaFn  ''
+        custom_highlights =   ''
             function(colors)
               local u = require("catppuccin.utils.colors")
               return {
