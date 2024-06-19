@@ -62,8 +62,9 @@
       signcolumn = "yes";
 
       # Enable cursor line highlight
-      cursorline = "number"; # Highlight the line where the cursor is located
-
+      cursorline = true; # Highlight the line where the cursor is located
+			cursorlineopt = "number";
+			
       # Set fold settings
       # These options were reccommended by nvim-ufo
       # See: https://github.com/kevinhwang91/nvim-ufo#minimal-configuration
