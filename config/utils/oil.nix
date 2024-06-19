@@ -52,5 +52,15 @@
         silent = true;
       };
     }
+    {
+      mode = "n";
+      key = "<leader>O";
+      action = ":Oil <CR>";
+      options = {
+        desc = "Open parent directory";
+        silent = true;
+      };
+    }
+
   ];
 }
