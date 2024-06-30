@@ -2,8 +2,8 @@
   plugins.none-ls = {
     enable = false;
     enableLspFormat = false;
-    updateInInsert = false;
-    onAttach = ''
+    settings.update_in_insert = false;
+    settings.on_attach = ''
       function(client, bufnr)
           if client.supports_method "textDocument/formatting" then
             vim.api.nvim_clear_autocmds { group = augroup, buffer = bufnr }
