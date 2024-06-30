@@ -14,6 +14,7 @@
       nix = ["alejandra"];
       markdown = [["prettierd" "prettier"]];
       rust = ["rustfmt"];
+      csharp = ["csharpier"];
     };
   };
 
