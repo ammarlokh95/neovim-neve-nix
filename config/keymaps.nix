@@ -581,7 +581,7 @@
     {
       mode = "n";
       key = "<leader>bd";
-      action = ":lua Mybufremove()";
+      action = ":lua Mybufremove()<cr>";
       options = {
         desc = "Delete buffer";
       };
